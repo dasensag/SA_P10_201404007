@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  client:
+    build: client/.
+    container_name: client
+    ports:
+      - 3000:3000
+  restaurant:
+    build: restaurant/.
+    container_name: restaurant
+    ports:
+      - 4000:4000
+  delivery:
+    build: delivery/.
+    container_name: delivery
+    ports:
+      - 5000:5000
+  esb:
+    build: esb/.
+    container_name: esb
+    ports:
+      - 6000:6000
