@@ -21,3 +21,12 @@ services:
     container_name: esb
     ports:
       - 6000:6000
+  proxy:
+    image: nginx:alpine
+    container_name: proxy
+    ports: 
+      - 80:80
+    volumes:
+      - type: bind
+        source: ./proxy
+        target: /etc/nginx/conf.d
