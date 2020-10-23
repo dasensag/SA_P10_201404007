@@ -1,6 +1,6 @@
-# P10 Software Avanzado
+# P11 Software Avanzado
 
-Service orchestration with a simple ESB. 
+Service orchestration with a simple ESB and reverse proxy
 
 ### Usage example video
 
